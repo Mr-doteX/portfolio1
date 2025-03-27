@@ -1,248 +1,138 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-gray-100">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>doteX</title>
     <link rel="shortcut icon" href="./images/logo1.png" type="image/x-icon">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="./css/select.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./script.js" defer></script>
+
 </head>
-<main class="bg-black-500 h-screen">
-    <header class="relative w-full h-screen">
-        <video autoplay muted loop class="absolute  to-0 left-0 w-full object-full  z-0 bg-auto md:bg-contain">
-            <source src="./images/select-bg.mp4" type="video/mp4">
-        </video>
-        <nav class="flex justify-around bg-white bg-opacity- rounded-12px">
-            <div class="relative z-8 flex items-center justify-around  w-full h-full border-y-5 border-gray-800">
-                <div class="flex pt-5 flex-col space-x-4 flex-shrink-0 w-52">
-                    <a class="text-1l text-blue-500 w-full" href="./index.html"><img src="./images/logo1.png"
-                            class="w-30 h-30 rounded-full"></a>
-                </div>
-                <div class="text-right text-white p-5">
-                    <h1 class="text-7xl font-bold">Welcome to doteX</h1>
-                    <h1 class="tex-3.5xl font-bold text-blue-300 italic">XVIEN AGYE</h1>
-                </div>
+
+<body class="bodypage">
+
+    <header classs='hd-home'>
+        <nav class="nav-bar">
+            <a href="index.html" class="logo">doteX<span>.\\</span></a>
+            <div>
+                <ul class="nav-list">
+                    <li><a href="#">// Home</a></li>
+                    <li><a href="#myservice">// Services</a></li>
+                    <li><a href="#">// Projects</a></li>
+                    <li><a href="#">// Contact</a></li>
+                </ul>
+            </div>
+            <div class="hireme">
+                <a href="#contact">HIRE<span>ME&nbsp&nbsp >></span></a>
             </div>
         </nav>
-        <!-- --------------------------------------------------- -->
-        <div class="flex col grid-cols-2 gap-20">
-            <!-- -------------------the leftside----------------- -->
-            <div class="flex h-full grid animate-in zoom-in duration-200 pt-10 px-10">
-                <div
-                    class="ring-1 grid cols-start-1 rounded-lg flex flex-col space-y-2 p-4 mb-6 bg-transparent hover:ring-2 ring-gray-300 hover:ring-sky-400 transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative text-white ">
-                    <div class="flex flex-col w-120 h-full z-0 relative">
-                        <div class="flex justify-between h-20">
-                            <div class="flex space-x-6">
-                                <div class="flex space-x-4 flex-shrink-0 w-52">
-                                    <img src="./images/ppimg1.png" class="w-30 h-30 rounded-full">
-                                    <div>
-                                        <div class="flex flex-row  font-semibold text-2xl px-2 w-60 pt-7">
-                                            Xvien Agyei
-                                        </div>
-                                        <div class="text-sm ">
-                                            <a class="text-2xl text-blue-500 w-full"
-                                                href="https://www.linkedin.com/in/noone-malai-503409189/">@doteX</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        <div class="head-mid">
+            <div class="ppic">
+                <div class="prof-sta">
+                    <h1>Hello!</h1>
+                    <h2>I'm XVIEN</h2>
+                    <p>BackEnd Developer specialized in Nodejs || JavaScript || MongoDB || GitHub. </p>
+
+                    <div class="jobs-scroll">
+                        <button class="scroll-btn left" onclick="scrollLeft()">&#9664;</button>
+                        <div class="image-wrap">
+                            <img src="./images/job1.jpg" alt="job1">
+                            <img src="./images/job2.png" alt="job2">
+                            <img src="./images/job3.png" alt="job3">
+                            <img src="./images/job4.png" alt="job4">
+                            <img src="./images/job5.png" alt="job5">
+                            <img src="./images/jo6.png" alt="job6">
+                            <img src="./images/cephtech.png" alt="cephtech">
+                            <img src="./images/sappersband.jpg" alt="sappers">
+                            <img src="./images/cop.png" alt="cop">
                         </div>
-                        <div class="pt-15  break-words text-lg/6 leading-6">
-                            As a <span class="text-blue-400 "> developer with a unique blend of technical expertise in
-                                HR cybersecurity,</span> I specialize in building secure, user-friendly websites and
-                            applications that prioritize both functionality and data protection. With a deep
-                            understanding of HR systems and cybersecurity protocols, <span class="text-blue-400">I’m
-                                committed to creating digital solutions that are not only visually compelling but also
-                                robust against the evolving landscape of online threats</span>. Whether you're looking
-                            to enhance your company's digital presence, improve user experience, or safeguard sensitive
-                            data, I bring a well-rounded approach that combines creative development with a strong
-                            foundation in security. Let’s collaborate to bring your vision to life, <span
-                                class="text-blue-400">with the peace of mind that comes from a secure, scalable
-                                solution.</span><br>
-                            <p>Beyond my professional work, I'm also an avid nature enthusiast, poet, and musician.
-                                These interests inspire me and provide fresh perspectives that translate into creating
-                                even better solutions.</p><br>
-
-                                <p> <span class="text-orange-200 italic">"Simplicity is the ultimate sophistication." — Leonardo da Vinci</span></p>
-                        </div>
+                        <button class="scroll-btn right" onclick="scrollRight()">&#9654;</button>
                     </div>
                 </div>
-                <!---------------------------cv----------------forms---------------------------------------->
-                <div
-                    class="ring-1 grid cols-start-1 rounded-lg flex flex-col space-y-2 p-4 mb-6 bg-transparent hover:ring-2 ring-gray-300 hover:ring-sky-400 transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative text-white ">
-                    <div class="flex grid-cols-3 w-full h-full z-0 relative  justify-center">
-                        <div class="flex  h-35">
-                            <div class="flex space-x-1 flex-shrink-3">
-                                <a class="text-2xl text-blue-500 w-full h-full"href="https://mr-dotex.github.io/Resume.io/" download="pdf"><img
-                                        src="./images/cv.jpg" class="w-30 h-30 rounded-full"></a>
-                            </div>
-                        </div>
-                        <!-- <div class="flex justify-between h-35">
-                            <div class="flex space-x-1 flex-shrink-0">
-                                <a class="text-2xl text-blue-500 w-full h-full"href="https://www.linkedin.com/in/noone-malai-503409189/"><img
-                                        src="./images/linkedin.png" class="w-30 h-30 rounded-full"></a>
-                            </div>
-                        </div> -->
-                        <div class="flex justify-between h-35 ">
-                            <div class="flex space-x-1 flex-shrink-0 h-full w-full object-center ">
-                                <a class="text-2xl text-blue-500 w-full h-full"href="https://github.com/Mr-doteX"><img
-                                        src="./images/git.png" class="w-30 h-30 rounded-full"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!-- ---------the right side experince ------------ -->
-            <div class="flex grid grid-cols-2 lg:grid-cols-2 gap-4 px-10 pt-15 left-0 w-full ">
-                <!-- -------work------ -->
-                <div
-                    class=" ring-2 rounded-lg flex flex-col h-80  space-y-2 p-4 mb-6 bg-transparent hover:ring-2 ring-gray-300 hover:ring-red-400 transform break-words duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative text-white left-0 ">
-                    <div
-                        class="flex flex-row text-white underline decoration-red-500 font-semibold text-2xl px-2 w-60 pt-1">
-                        EDUCATION <span class=""></span>
-                    </div>
-                    <p class="text-gray-400 font-semibold pt-5">
-                        <a class="text-2xl text-White-500 w-full"
-                            href="https://www.mygreatlearning.com/academy/learn-for-free/courses/human-resource-management">GREAT
-                            LEARNING: </a> Human Resources Management & Analytics
-                    </p>
-                    <p class=" text-gray-400 font-semibold pt-5">
-                        <a class="text-2xl w-full"
-                            href="https://openlabs.edu.gh/courses/diploma-in-network-engineering.php">NIIT OPEN LABS:
-                        </a> Computer Network Engineering
-                    </p>
-                    <p class=" text-gray-400 font-semibold pt-5">
-                        <a class="text-2xl  w-full" href="https://gi-kace.gov.gh/re-start/">GI-KACE: </a> Cybersecurity
-                        Operations
-                    </p>
-                </div>
-                <!-- ------projects------>
-                <div
-                    class="ring-2 rounded-lg w-50flex flex-col text-bold space-y-2 p-4 mb-6 bg-transparent hover:ring-2 ring-gray-300 hover:ring-orange-200 transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative text-white">
-                    <div class="flex flex-row underline decoration-red-500 font-semibold text-2xl px-2 w-60 pt-1">
-                        PROJECTS<span class=""></span>
-                    </div>
-                    <p class=" text-white font-semibold pt-5">
-                        <a class="text-2xl text-blue-300 w-full"
-                            href="https://mr-dotex.github.io/lalashops/">LALASHOP: </a>Developed an ecommerce website
-                        for a clothing sale using html, css and javaScript.
-                    </p>
-                    <p class=" text-white font-semibold pt-5">
-                        <a class="text-2xl text-blue-300 w-full" href="https://mr-dotex.github.io/Resume.io/">WELCOME:
-                        </a> Developed a website to host my resume using html and css.
-                    </p>
-                    <p class=" text-white font-semibold pt-5">
-                        <a class="text-2xl text-blue-300 w-full" href="https://mr-dotex.github.io/landing_page/">HEAL
-                            YOU SOUL: </a> Developed a landing page to advertise a music studio using html and css
-
-                    </p>
-                    <p class=" text-white font-semibold pt-5">
-                        <a class="text-2xl text-blue-300 w-full"
-                            href=" https://mr-dotex.github.io/cop.tantra.io/">TEST PAGE: </a>a one page profile using
-                        tailwind css (testing tailwindsyntax) and deploying on vercel.com
-                    </p>
-                    <p class=" text-white font-semibold pt-5">
-                        <a class="text-2xl text-blue-300 w-full"
-                            href=" https://mr-dotex.github.io/luxury_ghetto_hotel/">LUXURY GHETTO: </a> a hotel website
-                        tailored to the ghetto community using html,css, javascript and dummyAPis to display random
-                        quotes.
-                    </p>
-                    <p class=" text-white font-semibold pt-5">
-                        <a class="text-2xl text-blue-300 w-full"
-                            href=" https://mr-dotex.github.io/luxury_ghetto_hotel/">MIND LENCE: </a> a poetry website
-                        tailored to the african themes of wise sayings using html,css,quotes.
-                    </p>
-
-                </div>
-                <div
-                    class="ring-2 rounded-lg flex flex-col space-y-2 p-4 mb-6 bg-transparent hover:ring-2 ring-gray-300 hover:ring-green-200 transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative text-white left-0">
-                    <div
-                        class="flex flex-row underline decoration-red-500  text-white font-semibold text-2xl px-2 w-60 pt-1">
-                        CLIENTS<span class=""></span>
-                    </div>
-                    <p class=" text-gray-400 font-semibold pt-5">
-                        <a class="text-2xl w-full"
-                            href="https://www.marriott.com/en-us/hotels/accmc-accra-marriott-hotel/overview/">MARRIOTT
-                            HOTELS INT |
-                        </a>IT/AV TECHNICIAN | HR SYS. ADMIN.
-                    </p>
-                    <p class=" text-gray-400 font-semibold pt-5">
-                        <a class="text-2xl text-gray-400 w-full" href="https://cephtech.org/">CEPHTECH |</a>
-                        Webapp/System Security Analyst and Advisor
-                    </p>
-                    <p class=" text-white font-semibold pt-5">
-                        <a class="text-2xl text-gray-400 w-full"
-                            href="https://www.mygreatlearning.com/academy/learn-for-free/courses/human-resource-management">BELFAST
-                            AFRICA |</a> <span class="text-gray-400">Human Resources Management & Analytics</span>
-                    </p>
-                    <p class=" text-gray-400 font-semibold pt-5">
-                        <a class="text-2xl text-White-500 w-full"
-                            href="https://www.linkedin.com/company/incharge-global/about/"> IN-CHARGE GLOBAL | </a>
-                        Human Resources Management & Analytics
-                    </p>
-                </div>
-                <div
-                    class="ring-1 rounded-lg flex grid place-items-start grid-cols-4 space-y-2 pt-1 mb-6 bg-transparent hover:ring-2 ring-gray-300 hover:ring-pink-200 transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative text-white left-0">
-                    <div class="flex flex-row underline decoration-red-500 font-semibold text-2xl px-2 w-60 pt-1">
-                        SERVICES <span class=""></span>
-                    </div>
-                    <div class="flex pt-5 place-items-start flex-col space-x-4 flex-shrink-0 w-52">
-                        <a class="text-1l text-blue-500 w-full" href="https://github.com/Mr-doteX"> <img
-                                src="./images/webd.jpg" class="w-30 h-30 rounded-full"></a>
-                        <h2 class="flex flex-col  font-semibold text-2l px-2 w-60 pt-7">Web Dev.🕸️</h2>
-
-                    </div>
-                    <div class="flex pt-5 flex-col space-x-4 flex-shrink-0 w-52">
-                        <a class="text-1l text-blue-500 w-full"
-                            href="https://www.linkedin.com/in/noone-malai-503409189/"><img src="./images/cyber.jpg"
-                                class="w-30 h-30 rounded-full"></a>
-                        <h2 class="flex flex-col  font-semibold text-2l px-2 w-60 pt-7">Cybersecurity😊</h2>
-                    </div>
-                    <div class="flex pt-5 flex-col space-x-4 flex-shrink-0 w-52">
-                        <a class="text-1l text-blue-500 w-full" href="https://youtu.be/jgsD9CgwxQ8?si=3wbg-psgjSXQ4X2O">
-                            <img src="./images/musicpro.jpg" class="w-30 h-30 rounded-full"></a>
-                        <h2 class="flex flex-col  font-semibold text-2l px-2 w-60 pt-7">Music🎸</h2>
-
-                    </div>
+                <div class="pimg">
+                    <img src="./images/ppic.png" alt="profile">
                 </div>
             </div>
         </div>
-
     </header>
-    <!------------------------------------------------------------------contact informatino-------------------------------------------- -->
-    <div class="h-full bg-black">
-        <div class="pt-10 md:pt-20">
-            <div class="p-4 md:p-8">
-                <h1 class="text-white text-center pt-27 pb-8 font-bold text-4xl md:text-5xl lg:text-6xl">TALK TO US</h1>
-                <form class="flex flex-col items-center">
-                    <div class="md:w-3/4 lg:w-2/3 xl:w-1/2">
-                        <div class="flex flex-col md:flex-row">
-                            <input id="name" type="text"
-                                class="my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full md:w-1/2 md:mr-2 outline-none focus:ring-2 focus:ring-blue-600"
-                                placeholder="Name">
-                            <input id="email" type="email"
-                                class="my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full md:w-1/2 md:ml-2 outline-none focus:ring-2 focus:ring-blue-600"
-                                placeholder="Email">
-                        </div>
-                        <input id="subject" type="text" placeholder="Subject"
-                            class="my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full outline-none focus:ring-2 focus:ring-blue-600">
-                        <textarea id="message" rows="5" placeholder="Say Something"
-                            class="my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full outline-none focus:ring-2 focus:ring-blue-600"></textarea>
-                    </div>
-                    <h3 class="text-white text-center pt-3 text-1 md:text-1xl">Made with 😀🥰 by eX &copy;2025 </h3>
-                    <button
-                        class="border-2 text-md mt-5 rounded-md py-2 px-4 bg-blue-600 hover:bg-blue-700 text-gray-100 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-600 hover:stroke-white"><a
-                            href="mailto:asante.leonard@yahoo.com">Send Message</a>
-                    </button>
-                </form>
+    <main>
+        <!-- the services area --------------------------->
+        <section class="services" id="myservice">
+            <div class="ser-hdn">
+                <h1>SERVICESE PROVIDED</h1>
             </div>
-        </div>
-    </div>
-</main>
+            <dvi class="servs-dtl">
+                <div class="serv-skill">
+                    <img src="./icons/checkmark.png" alt="">
+                    <h1>&nbsp&nbspDEVELOPMENT</h1>
+                    <div>
+                        <ul class=" ser-list">
+                            <li> >> &nbsp HTML/CSS &nbsp</li>
+                            <li> >> &nbsp JavaScript &nbsp</li>
+                            <li> >> &nbsp Nodejs &nbsp</li>
+                            <li> >> &nbsp MongoDB &nbsp</li>
+                            <li> >> &nbsp SQLite &nbsp</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="serv-skill">
+                    <img src="./icons/checkmark.png" alt="">
+                    <h1>&nbsp&nbspHUMAN RESOURCES</h1>
+                    <div>
+                        <ul class=" ser-list">
+                            <li> >> &nbsp Oasys &nbsp </li>
+                            <li> >> &nbsp Bayern &nbsp</li>
+                            <li> >> &nbsp Enquest &nbsp</li>
+                            <li> >> &nbsp LabourAct 651 &nbsp</li>
+                            <li> >> &nbsp Google workspace</li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="serv-skill">
+                    <img src="./icons/checkmark.png" alt="">
+                    <h1>&nbsp&nbspCYBERSCURITY</h1>
+                    <div>
+                        <ul class=" ser-list">
+                            <li> &nbsp>> &nbsp Wireshark  &nbsp</li>
+                            <li> &nbsp>> &nbsp Nmap &nbsp</li>
+                            <li> &nbsp>> &nbsp Qualys &nbsp</li>
+                            <li> &nbsp>> &nbsp Sandboxing &nbsp</li>
+                            <li> &nbsp>> &nbsp Training &nbsp</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="serv-skill">
+                    <img src="./icons/checkmark.png" alt="">
+                    <h1>&nbsp&nbspIT ADMIN</h1>
+                    <div>
+                        <ul class=" ser-list">
+                            <li> &nbsp>> &nbsp Service NOW &nbsp</li>
+                            <li> &nbsp>> &nbsp Windows &nbsp</li>
+                            <li> &nbsp>> &nbsp Cubase/StudioOne &nbsp</li>
+                            <li> &nbsp>> &nbsp AV SystemsControl &nbsp</li>
+                            <li> &nbsp>> &nbsp Graphics Design&nbsp</li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+            </dvi>
+        </section>
+
+
+
+    </main>
+
+    <!-- footer -->
+</body>
 
 </html>

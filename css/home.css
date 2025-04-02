@@ -52,7 +52,8 @@
     color: rgb(4, 92, 168);
     transform: translateX(0px);
 }
-.hire-me{
+
+.hire-me {
     margin-top: 20px;
     text-decoration: none;
     padding: 10px 13px;
@@ -62,13 +63,16 @@
     font-size: 1.5rem;
     border-radius: 25px;
     margin-left: 70px;
-    animation: blink 5s infinite;;
+    animation: blink 5s infinite;
+    ;
 }
-.hire-me:hover{
+
+.hire-me:hover {
     animation: none;
     background: rgb(62, 101, 4);
     color: #e1e3e3;
 }
+
 .popup {
     display: none;
     position: fixed;
@@ -101,6 +105,7 @@
     padding: 8px 16px;
     cursor: pointer;
 }
+
 .popup button[type="button"] {
     background-color: red;
     color: whitesmoke;
@@ -341,9 +346,8 @@
     display: grid;
     grid-template-columns:
         repeat(auto-fit, minmax(400px, 0.1fr));
-    min-height: 50vh;
-    width: 75%;
-    transform: translate(40%);
+    min-height: 95vh;
+    width: 100%;
 }
 
 .work-item {
@@ -402,10 +406,186 @@
 @media screen and (max-height:450) {
     .sidenav {
         padding-top: 15px;
+        width: 100%;
+    }
+
+}
+
+/* Mobile Screens: 360 x 640 */
+@media screen and (max-width: 480px) {
+    .mainpg {
+        width: 80%;
+        transform: translate(0);
+        padding-top: 5%;
+    }
+
+    .sidenav {
+        width: 15%;
     }
 
     .sidelinks a {
-        font-size: 10px;
+        font-size: 2.5vw;
     }
 
+    .hire-me {
+        margin-left: 0;
+        font-size: 2vw;
+        padding: 2px 5px;
+        margin-left: 0px;
+    }
+
+    .sidebtm {
+        font-size: 3vw;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 5vw;
+    }
+
+    .about-pdtl {
+        width: 10vw;
+        display: flex;
+        flex-direction: column;
+        font-size: 4vw;
+        gap: 10px;
+    }
+
+    .infoweb :hover {
+        border-radius: 2px;
+        padding: 0;
+        background: #658A93;
+        color: rgb(255, 255, 255);
+    }
+
+    .infomail :hover {
+        border-radius: 2px;
+        padding: 0;
+        background: #658A93;
+        color: rgb(255, 255, 255);
+    }
+
+    .infocity :hover {
+        border-radius: 2px;
+        padding: 0;
+        background: #658A93;
+        color: rgb(255, 255, 255);
+    }
+
+    .btn-cv {
+        font-size: 0.6rem;
+    }
+
+    .services {
+        transform: translate(20%);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.site-footer {
+    transform: translate(0);
+    text-align: center;
+    bottom: 0;
+}
+
+.right {
+    display: flex;
+    flex-direction: grid;
+    text-decoration: none;
+    font-size: 2rem;
+    gap: 20px;
+}
+
+/* Tablet Screens: 768 x 1024 */
+@media screen and (max-width: 1024px) {
+    .sidenav {
+        width: 20%;
+    }
+
+    .mainpg {
+        width: 78%;
+        transform: translate(30%);
+    }
+
+    .services {
+        transform: translate(10);
+        width: 90%;
+
+    }
+
+    .servs-dtl {
+        height: 70vh;
+        /* width: 0%; */
+    }
+
+    .ser-list {
+        font-size: 1.2vw;
+        line-height: 3vw;
+    }
+
+    .serv-skill h1 {
+        font-size: 1rem;
+    }
+
+    .work-container {
+        width: 90%;
+        transform: translate(38%);
+        /* display:flex; */
+        /* align-items: center; */
+    }
+
+
+    .hire-me {
+        padding: 3px 4px;
+        margin-left: 15px;
+    }
+
+    .site-footer {
+        transform: translate(50%);
+        text-align: center;
+    }
+}
+
+/* Desktop Screens: 1366 x 768 */
+@media screen and (min-width: 1025px) {
+    .sidenav {
+        width: 17%;
+    }
+
+    .hire-me {
+        padding: 6px 8px;
+    }
+
+    .mainpg {
+        width: 83%;
+        transform: translate(26%);
+    }
+
+    .services {
+        transform: translate(22%);
+        width: 80%;
+    }
+
+    .servs-dtl {
+        height: 80vh;
+    }
+
+    .ser-list {
+        font-size: 1vw;
+    }
+
+    .work-container {
+        width: 75%;
+        transform: translate(40%);
+    }
+
+    .site-footer {
+        transform: translate(55%);
+    }
 }

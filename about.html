@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="shortcut icon" href="./images/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/home.css">
+    <script src="./style.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+
+
+</head>
+
+<body>
+    <main>
+        <div id="animeGlobe"></div>
+
+        <aside class="sidenav">
+            <div class="sidepropic">
+                <a href="./index.html"><img src="./images/ppic.png" alt="profilepic"></a>
+            </div>
+            <div class="sidelinks">
+                <a href="./about.html"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp&nbspABOUT</a>
+                <a href="./service.html"><i class="fa fa-cog fa-spin fa-2x fa-fw"
+                        aria-hidden="true"></i>&nbspSERVICES</a>
+                <a href="./works.html"><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp&nbspWORKS</a>
+                <button onclick="openPopup()" class="hire-me"><i class="fa fa-handshake-o" aria-hidden="true"></i>&nbsp;&nbsp;Hire
+                    ME</button>
+                    <div id="emailPopup" class="popup">
+                        <form action="send_mail.php" method="post">
+                            <h2>Send Us A Mail</h2>
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="text" name="company" placeholder="Your Company Name" required>
+                            <input type="text" name="position" placeholder="Your Current Position" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" placeholder="Your Message..."></textarea>
+                            <button type="submit">Push</button>
+                            <button type="button" onclick="closePopup()">Thank You😁</button>
+                        </form>
+
+                    </div>
+            </div>
+
+            <div class="music">
+                <audio src="./images/bgmusic.mp3" controls autoplay></audio>
+            </div>
+
+            <div class="sidebtm">
+                <p> Created with 💖 &copy; doteX<br>Music 🎹 by Malai🌹</p>
+            </div>
+        </aside>
+
+        <section class="mainpg" id="AboutME">
+            <div class="about-text">
+                <h2> 👋 I AM XVIEN </h2>
+                <p>
+                    Inspired Web Developer with a strong foundation in JavaScript, HTML, CSS, and backend technologies
+                    like Node.js and MongoDB. I am passionate about building secure, scalable backend systems and have
+                    completed [8] projects, including an API for managing online learning resources that allows users to
+                    register/login and be authenticated before being able to add resources. Skilled with
+                    problem-solving, teamwork, effective communication, with a stout drive to learn and grow in the tech
+                    industry.
+                </p>
+            </div>
+            <div class="about-pdtl">
+                <div class="infoweb">
+                    <p>Wedsite:
+                        <a href="https://vercel.com/ansatexs-projects">doteX.com</a>
+                    </p>
+                </div>
+                <div class="infomail">
+                    <p>Email:
+                        <a href="mailto:asante.leonard@yahoo.com?cc=agyei22@gmail.com" target="_top">RFQ</a>
+                    </p>
+                </div>
+                <div class="infomap">
+                    <div class="infocity">
+                        <p>City:<span>Accra, Ghana</span></p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127066.75857679047!2d-0.17972944999999999!3d5.5912087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9084b2b7a773%3A0xbed14ed8650e2dd3!2sAccra!5e0!3m2!1sen!2sgh!4v1743522069908!5m2!1sen!2sgh"
+                            width="200" height="70" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn-dnlds">
+                <div>
+                    <a class="btn-cv" href="https://mr-dotex.github.io/Resume.io/" target="_blank"
+                        rel="noopener">Download CV</a>
+                </div>
+            </div>
+        </section>
+        <footer class="site-footer">
+            <div class="ft-cont">
+                <p class="right">
+                    <a href="https://github.com/Mr-doteX?tab=repositories"><i class="fa fa-github"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/mr-xvien-503409189/"><i class="fa fa-linkedin-square"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com/@BedRoom_Production"><i class="fa fa-youtube"
+                            aria-hidden="true"></i></a>
+                </p>
+            </div>
+        </footer>
+    </main>
+
+</body>
+
+</html>

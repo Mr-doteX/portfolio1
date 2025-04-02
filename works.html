@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="shortcut icon" href="./images/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/home.css">
+    <script src="./style.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+
+
+</head>
+
+<body>
+    <main>
+        <div id="animeGlobe"></div>
+
+        <aside class="sidenav">
+            <div class="sidepropic">
+                <a href="./index.html"><img src="./images/ppic.png" alt="profilepic"></a>
+            </div>
+            <div class="sidelinks">
+                <a href="./about.html"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp&nbspABOUT</a>
+                <a href="./service.html"><i class="fa fa-cog fa-spin fa-2x fa-fw"
+                        aria-hidden="true"></i>&nbspSERVICES</a>
+                <a href="./works.html"><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp&nbspWORKS</a>
+
+                <button onclick="openPopup()" class="hire-me"><i class="fa fa-handshake-o"
+                        aria-hidden="true"></i>&nbsp;&nbsp;Hire
+                    ME</button>
+                <div id="emailPopup" class="popup">
+                    <form action="send_mail.php" method="post">
+                        <h2>Send Us A Mail</h2>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="text" name="company" placeholder="Your Company Name" required>
+                        <input type="text" name="position" placeholder="Your Current Position" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message..."></textarea>
+                        <button type="submit">Push</button>
+                        <button type="button" onclick="closePopup()">Thank You😁</button>
+                    </form>
+
+                </div>
+
+
+                <div class="music">
+                    <audio src="./images/bgmusic.mp3" controls autoplay></audio>
+                </div>
+
+                <div class="sidebtm">
+                    <p> Created with 💖 &copy; doteX<br>Music 🎹 by Malai🌹</p>
+                </div>
+        </aside>
+
+        <section class="works-page" id="works">
+            <div class="work-container">
+                <div class="work-item">
+                    <a href="https://dashboard.render.com/" target="_blank" rel="noopener">
+                        <img src="./images/projects/apis.jpg" alt="apis">
+                    </a>
+                </div>
+                <div class="work-item">
+                    <a href="https://cop-tantra-io.vercel.app/">
+                        <img src="./images/projects/cop.png" alt="tantra cop.com">
+                    </a>
+                </div>
+                <div class="work-item">
+                    <a href="https://lalashops.vercel.app/" target="_blank" rel="noopener">
+                        <img src="./images/projects/lala.png" alt="lalashops" data-original="lala-full.png">
+                    </a>
+                </div>
+                <div class="work-item">
+                    <a href="https://luxury-ghetto-hotel.vercel.app/">
+                        <img src="./images/projects/luxhotel.png" alt="luxhotel">
+                    </a>
+                </div>
+                <div class="work-item">
+                    <a href="#">
+                        <img src="./images/projects/poem.png" alt="poem-site">
+                    </a>
+                </div>
+                <div class="work-item">
+                    <a href="https://mr-dotex.github.io/musix_page/">
+                        <img src="./images/projects/soulmusic.png" alt="soulmusic-site">
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </section>
+        <footer class="site-footer">
+            <div class="ft-cont">
+                <p class="right">
+                    <a href="https://github.com/Mr-doteX?tab=repositories"><i class="fa fa-github"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/mr-xvien-503409189/"><i class="fa fa-linkedin-square"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com/@BedRoom_Production"><i class="fa fa-youtube"
+                            aria-hidden="true"></i></a>
+                </p>
+            </div>
+        </footer>
+    </main>
+
+</body>
+
+</html>
